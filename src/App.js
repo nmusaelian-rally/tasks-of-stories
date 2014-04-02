@@ -7,29 +7,6 @@ Ext.define('CustomApp', {
         labelWidth: 100,
         width: 300
     },
-/*
-    addContent: function() {
-        
-        this._makeStore();
-
-        /*
-        Ext.create('Rally.data.WsapiDataStore', {
-            model: 'UserStory',
-            fetch: ['FormattedID','Name','Tasks'],
-            pageSize: 100,
-            autoLoad: true,
-            filters: [this.getContext().getTimeboxScope().getQueryFilter()],
-            listeners: {
-                load: this._onDataLoaded,
-                scope: this
-            }
-        }); */
- /*   },
-    
-    _makeStore: function(){
-         
-    },
- */   
    onScopeChange: function() {
         Ext.create('Rally.data.WsapiDataStore', {
             model: 'UserStory',
